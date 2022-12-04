@@ -1,0 +1,405 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+   
+}
+
+:root{
+    --bg-color: #f6f6f6;
+    --text-color: black;
+}
+
+
+.header_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 36px;
+}   
+
+.header_logo{
+   display: flex;
+align-items: center;
+justify-content: right;
+}
+
+.header_logo i{
+        font-size:16px;
+        display: none;
+}
+
+.header_logo img{
+    height: 50px;
+}
+
+.header_items{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0px px;
+    height: 60px;
+}
+
+.header_listItem{
+    margin: 0px 20px;
+    font-weight: 400;
+}
+
+.header_icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header_icons i {
+   padding: 0px 12px;
+   font-size: 17px;
+}
+
+
+.filtros_wrapper{
+    background-color:#EAEAEB;
+    margin: auto;
+    border-top: 1px solid rgb(241, 241, 241);
+    border-bottom: 1px solid rgb(241, 241, 241);
+    padding: 0px 20px;
+}
+
+#subCategorias{
+    padding-inline-start: 40px;
+    padding: 48px 0px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+}
+
+.categoria{
+    overflow-x: hidden;
+    display: block;
+    overflow: hidden;
+    flex-shrink: 0;
+    width: 215px;
+   }
+
+.filtro_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 16px;
+   }
+
+.filtro_enlace{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-size: 0.75rem;
+    font-weight: 600;
+    min-height: 68px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px 16px;
+    transition: all 0.3s ease 0s;
+    letter-spacing: 2px;
+    line-height: 1.125rem;
+}
+
+.encabezado_flex{
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 32px 1rem 0rem 2rem;
+}
+
+.titulo{
+    margin-bottom: 16px;
+    line-height: 3.125rem;
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+.c_titulo{
+    margin-bottom: 36px;
+    font-size: 1.625rem;
+    font: 500 1.5rem / 3.125rem ;
+    letter-spacing: -0.5px;
+}
+
+.encabezado_productos{
+    font-size: 1rem;
+    line-height: 1.625;
+    letter-spacing: 0.4px;
+    color: rgb(85, 85, 85);
+    margin: 4px;
+}
+
+
+.ejemplo_grid{
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(3, 32%);
+    grid-column: span 6 / auto;
+    padding: 2vw;
+}
+
+.ejemplo_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    padding-bottom: 20px;
+  
+}
+
+.ejemplo_h1{
+    color: black;
+    font-size: 1rem;
+}
+
+.ejemplo_p{
+    color: rgb(60, 57, 57);
+    font-size: 0.9rem;
+}
+
+
+
+table{
+    grid-column: 1 / -1;
+    max-width: initial;
+    margin: 16px;
+}
+
+tr{
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+   
+}
+
+
+th{
+    border-bottom: 1px solid rgb(229, 229, 229);
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: center;
+}
+
+.caracters{
+    display: none;
+}
+
+.producto_cabecera{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.producto_imagen{
+    padding: 0px 1px;
+    
+    padding-bottom: 20px;   
+}
+.producto_titulo{
+    font-size: 0.75rem;
+    letter-spacing: 2px;   
+}
+
+
+.pTableHeading{
+    text-align: left;
+    min-width: 140px;
+}
+
+.pTableHeading td{
+    border-bottom: 1px solid rgb(229, 229, 229);
+}
+
+.pTableRow{
+    border-bottom: 1px solid rgb(229, 229, 229);
+}
+
+table td{
+    display: table-cell;
+    vertical-align: inherit;
+    width: 25%;
+    text-align: center;
+    padding: 20px 10px;
+   }
+
+tbody{
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.comparacion{
+    padding: 0px 8.33333333%;
+}
+
+.comparacion_contenedor{
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+tbody{
+    height: auto;
+    width: 100%;
+    display: inline-block;
+    overflow-x:hidden;
+}
+
+
+
+@media (max-width: 1280px){
+.nav{
+    padding: 5px 0;
+    margin: 0px 20px;
+}
+
+.comparacion{
+    padding: 0px 2.33333333%;
+}
+
+
+.comparacion_contenedor{
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: auto;
+}
+
+}
+
+@media (max-width: 950px){
+    .header_logo i{
+        display: block;
+        
+    }
+
+    .pTableRow{
+        vertical-align: middle;
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    .header_items{
+        display: none;
+    }
+    
+    
+    .header_logo img{
+        padding: center;
+        align-items: center;
+        margin-left: 37.5vw;
+    }
+    
+    .header_main{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 36px 0px 36px;
+    }   
+    
+    .header_icons i {
+        padding: 0px 12px;
+        font-size: 17px;
+    }
+    
+    
+    
+    #subCategorias{
+        overflow-y: hidden;
+    }
+
+    .comparacion{
+        padding: auto;
+        margin: auto;
+    }
+    
+    
+    .comparacion_contenedor{
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 1 auto;
+        flex-direction: row;
+        margin: auto;
+        padding: auto;
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media (max-width: 770px){
+        
+.TableHeading{
+   margin: 1vw;
+   padding: 1vw;
+    top: 0px;
+    background: white;
+
+}
+
+.ejemplo_grid{
+    display: grid;
+    grid-template-columns: repeat(2, 47vw);
+    grid-column: span 6 / auto;
+    margin: 6px;
+   
+}
+
+.ejemplo_card{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding-bottom: 20px;
+}
+
+#ocultable{
+    display: none;
+    
+} 
+
+.caracters{
+    display: block;
+    position: sticky;
+    text-align: center;
+    margin-left: 50vw;
+    width: 33%;
+    text-transform: uppercase;
+}
+
+.pTableRow{
+    display: flex;
+    justify-content: space-around;
+
+   }
+
+
+.pTabla_caracters{
+    padding: 20px 10px;
+    border-bottom: none;
+    padding-bottom: 0px;
+    text-align: center;
+    
+}
+
+
+
+}
